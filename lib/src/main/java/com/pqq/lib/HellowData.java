@@ -8,25 +8,11 @@ import android.view.View;
  */
 public class HellowData {
 
-    public View hellowInfo;
+    public View hellowView;
 
     public Rect targetRect;
 
     public int padding;
 
-    public View getHellowInfo() {
-        return hellowInfo;
-    }
 
-    public void setHellowInfo(View hellowInfo) {
-        this.hellowInfo = hellowInfo;
-    }
-
-    public Rect getTargetRect() {
-        return targetRect;
-    }
-
-    public void setTargetRect(Rect targetRect) {
-        this.targetRect = targetRect;
-    }
 }
