@@ -113,7 +113,7 @@ public class GuideView extends View {
             onDrawSingleHellow(cacheData, canvas);
         }
 
-        if (hellowData == null) {
+        if (cacheData == null) {
             View view = hellowData.hellowView;
             hellowData.targetRect = new Rect();
             int[] locations = new int[2];
@@ -124,8 +124,8 @@ public class GuideView extends View {
             hellowData.targetRect.right += hellowData.targetRect.left;
             hellowData.targetRect.bottom += hellowData.targetRect.top;
 
-            hellowData.targetRect.top -= ScreenUtil.getScreenHeight(getContext());
-            hellowData.targetRect.bottom -= ScreenUtil.getScreenHeight(getContext());
+            hellowData.targetRect.top -= ScreenUtil.getStatusBarHeight(getContext());
+            hellowData.targetRect.bottom -= ScreenUtil.getStatusBarHeight(getContext());
 
             if (hellowData.padding > 0) {
                 hellowData.targetRect.left += hellowData.padding;
